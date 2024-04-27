@@ -25,15 +25,12 @@ Find out the ip address of the attackers system
 
 
 ## OUTPUT:
-
 ![Screenshot 2024-04-27 132501](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/bf1abe5f-d384-44ae-bc36-acd2faae3cd4)
 
 ##Invoke msfconsole:
-
 ![Screenshot 2024-04-27 132720](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/0b1529e4-3ed7-4bfb-b468-d3881f1fda13)
 
 ##Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
-
 ![Screenshot 2024-04-27 133041](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/7048e68b-3fa5-4775-8105-34a9b60c89ca)
 
 Port Scanning:
@@ -45,7 +42,6 @@ msf > nmap -sT 192.168.1810/24 -p1-1000
 
 
 ## OUTPUT:
-
 ![Screenshot 2024-04-27 133202](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/d4ff9eed-2f52-4253-b1f6-6624428cbfe6)
 
 use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later.
@@ -55,7 +51,6 @@ scan the targets with the command db_nmap as follows.
 msf > db_nmap 192.168.181.0/24
 
 OUTPUT:
-
 ![Screenshot 2024-04-27 133445](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/c90581d0-0a93-4003-83fc-7b6046230873)
 
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules.
@@ -65,19 +60,16 @@ cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
 
 OUTPUT:
-
 ![Screenshot 2024-04-27 133707](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/ca751a5e-9c2d-47bf-a2c4-549a20da9387)
 
 Search is a powerful command in Metasploit that you can use to find what you want to locate.
 
 msf >search name:Microsoft type:exploit
-
 ![Screenshot 2024-04-27 133812](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/d7963e37-5a8c-47e7-8b7c-496781d8fddf)
 
 The info command provides information regarding a module or platform
 
 OUTPUT:
-
 ![Screenshot 2024-04-27 134231](https://github.com/22008496/Metasploit-for-reconnaissance/assets/119476113/356f8520-8021-4fbe-b91d-46eec17dfe6c)
 
 Before beginning, set up the Metasploit database by starting the PostgreSQL server and initialize msfconsole database as follows:
